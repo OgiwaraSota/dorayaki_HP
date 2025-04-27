@@ -1,0 +1,320 @@
+/* 全体 */
+
+body {
+    margin: 0;
+    color: #333;
+    background-color: #333;
+    line-height: 1.6;
+}
+
+
+/* ヘッダー */
+
+header {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0 20px;
+    border-radius: 0 0 10px 10px;
+}
+  
+.title{
+    padding-top: 15px;
+}
+  
+.title h1 {
+    color: #333;
+    font-size: 6vw;
+    font-family: "Helvetica Neue",
+                Arial,
+                "Hiragino Kaku Gothic ProN",
+                "Hiragino Sans",
+                Meiryo,
+                sans-serif;
+    line-height: 1.7em;
+    margin: 0;
+}
+
+.highlight{
+    font-size: 12vw;
+    font-weight: bold;
+}
+  
+header p {
+    font-size: 0.8rem;
+    font-family: "M PLUS 1", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    padding: 20px 30px;
+    color: #333;
+    margin: 0;
+}
+
+.dorayaki {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.dorayaki img {
+    border-radius: 10px; /* 角を少し丸く */
+}
+  
+  
+/* メンバー */
+
+section#members {
+    padding: 0;
+
+}
+
+section#members h2 {
+    font-size: 8vw;
+    padding: 10px 0;
+    text-align: center;
+    margin: 60px 80px 0;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.member-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.background::before {
+	opacity: 0; /* 初期状態では非表示 */
+	transition: opacity 1s; /* 1秒かけてフェードイン/フェードアウト */
+}
+.background.active::before {
+	opacity: 1; /* フェードイン状態 */
+}
+.background.inactive::before {
+	opacity: 0; /* フェードアウト状態 */
+}
+
+.dorayaki::before,
+.sota::before,
+.hibiki::before,
+.nozomi::before,
+.aoi::before,
+.yuta::before,
+.tsugumi::before,
+.hikaru::before,
+.komei::before,
+.ayane::before {
+    content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    filter: blur(2px) brightness(0.6);
+    z-index: -1;
+}
+
+.dorayaki::before{
+    background: url(./images/dorayaki-3.jpg) no-repeat center center / cover;
+}
+.sota::before{
+    background: url(./images/member/sota.jpg) no-repeat center center / cover;
+}
+.hibiki::before{
+    background: url(./images/member/hibiki.jpg) no-repeat center center / cover;
+}
+.nozomi::before{
+    background: url(./images/member/nozomi.jpg) no-repeat center center / cover;
+}
+.aoi::before{
+    background: url(./images/member/aoi.jpg) no-repeat center center / cover;
+}
+.yuta::before{
+    background: url(./images/member/yuta.jpg) no-repeat center center / cover;
+}
+.tsugumi::before{
+    background: url(./images/member/tsugumi.jpg) no-repeat center center / cover;
+}
+.hikaru::before{
+    background: url(./images/member/hikaru.jpg)  no-repeat center center / cover;
+}
+.komei::before{
+    background: url(./images/member/komei.jpg) no-repeat center center / cover;
+}
+.ayane::before{
+    background: url(./images/member/ayane.jpg) no-repeat center center / cover;
+}
+
+
+.member-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.member-content img {
+    width: 70vw;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 10px 10px 0 0; /* 角を少し丸く */
+}
+
+.member-text {
+    width: 70vw;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.7); /* 淡い青色の50%透明 */
+    border-radius: 0 0 10px 10px; /* 角を少し丸く */
+}
+
+.member-content h3 {
+    font-size: 8vw;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.furigana{
+    font-size: 3vw;
+    color: #333;
+    padding: 10px 0 0;
+    margin: 0;
+}
+
+.text {
+    font-size: 3vw;
+    color: #333333; /* ダークグレーで視認性を良く */
+    margin: 0 0 30px;
+    padding: 10px 15px 15px; /* テキストの周りに余白を追加 */
+}
+
+
+/* ブログ */
+
+section#blogs {
+    background-color: #333;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    color: #ffffff;
+    border-top: black;
+    border-width: 20px;
+}
+
+section#blogs h2 {
+    font-size: 8vw;
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+section#blogs ul {
+    padding: 0;
+}
+
+section#blogs li {
+    margin: 1rem 0;
+    list-style: none;
+}
+
+section#blogs a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+section#blogs a:hover {
+    color: #e66060;
+}
+
+/* フッター */
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e0f2f1;
+    color: #555;
+    font-size: 1rem;
+    border-top: 2px solid #80cbc4;
+}
+
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 0 40px;
+        margin: 0 100px;
+    }
+
+    header p{
+        font-size: 1.2rem;
+    }
+
+    .dorayaki img{
+        width: 40vw;
+        height: auto;
+        margin: 0 0 30px;
+        padding: 0;
+    }
+
+    .description{
+        padding: 0 0 20px;
+    }
+
+    section#members h2 {
+        font-size: 3rem;
+        margin: 60px 300px 0;
+    }
+
+    .member-content {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .member-content img {
+        width: 30vw;
+        padding-left: 10vw;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .member-text{
+        width: 35vw;
+        margin: 0;
+        padding: 20px;
+        border-radius: 0 10px 10px 0; /* 角を少し丸く */
+        background-color: rgba(255, 255, 255, 0.8); /* 淡い青色の50%透明 */
+    }
+    
+    .member-content h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .member-content p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .dorayaki::before,
+    .sota::before,
+    .hibiki::before,
+    .nozomi::before,
+    .aoi::before,
+    .yuta::before,
+    .tsugumi::before,
+    .hikaru::before,
+    .komei::before,
+    .ayane::before {
+        left: auto; /* leftは指定せず、右を基準にする */
+        right: 0; /* 右端に配置 */
+        width: 55%; /* 必要に応じて幅を調整 */
+        filter: blur(2px) brightness(0.6) box-shadow(20px 20px 20px rgba(255, 255, 255, 0.5));
+    }
+
+    section#blogs h2 {
+        font-size: 3rem;
+        margin: 10px 0;
+    }
+
+}
+
