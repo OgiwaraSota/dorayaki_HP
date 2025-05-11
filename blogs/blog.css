@@ -3,7 +3,6 @@ body {
     color: #333;
     background-color: #333;
     line-height: 1.6;
-    font-family: "M PLUS 1", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 header {
@@ -32,6 +31,7 @@ header h1 {
     margin: 0 auto;
     border-radius: 10px;
     max-width: 900px;
+    font-family: "M PLUS 1", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 .blog-header {
