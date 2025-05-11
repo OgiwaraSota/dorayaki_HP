@@ -78,6 +78,10 @@ header h1 {
         margin: 0 10px;
     }
 
+    .blog-content p{
+        padding: 0 10px;
+    }
+
     #blog-post h1 {
         font-size: 8vw;
         margin: 0 0 10px;

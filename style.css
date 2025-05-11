@@ -222,7 +222,7 @@ section#blogs a {
     font-weight: bold;
     transition: color 0.2s;
     color: #ffffff;
-    font-size: 1.7vw;
+    font-size: 1rem;
 }
 
 section#blogs a:hover {
@@ -296,6 +296,10 @@ footer {
     .member-content p {
         text-align: center;
         font-size: 1rem;
+    }
+
+    section#blogs a {
+        font-size: 1.7vw;
     }
 
     .dorayaki::before,
