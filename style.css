@@ -278,11 +278,11 @@ footer {
     }
     
     .member-text{
-        width: 35vw;
+        width: 30vw;
         margin: 0;
         padding: 20px;
         border-radius: 0 10px 10px 0; /* 角を少し丸く */
-        background-color: rgba(255, 255, 255, 0.8); /* 淡い青色の50%透明 */
+        background-color: rgba(255, 255, 255, 0.8);
     }
     
     .member-content h3 {
@@ -292,7 +292,7 @@ footer {
 
     .member-content p {
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .dorayaki::before,
